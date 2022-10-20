@@ -1,0 +1,139 @@
+:root{
+  --twitterColor: #1da1f3;
+  --borderColor: lightgrey;
+  --marginLeftRight: 15px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+  padding: 12px;
+}
+
+.cardHeader{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.iconContainer{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postAuthor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.authorText, .likesSection, .commentsSection{
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.likesSection, .commentsSection, .descr{
+  padding: 10px 0;
+}
+
+.descr > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.twitterIcon{
+  font-size: 25px;
+  color: var(--twitterColor);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.urlText{
+  font-size: 0.8rem;
+  color: gray;
+  text-decoration: none;
+}
+
+.postTitleText{
+  padding: 5px 0 5px 0;
+}
+
+.postSubtitleText{
+  padding: 3px 0 8px 0;
+  font-size: 0.9rem;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+}
+
+.postImg{
+  border-radius: 10px 10px 0 0;
+}
+
+.postData{
+  padding: 5px var(--marginLeftRight) 10px var(--marginLeftRight);
+}
+
+.likes{
+  padding: 0 10px 0 3px;
+}
+
+.comments{
+  padding: 0 3px 0 3px;
+}
+
+.commentsSection{
+  text-decoration: none;
+  color: var(--twitterColor);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid var(--borderColor);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 15px
+}
+
+.iconSize{
+  font-size: 1rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.circleIcom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  background-color: var(--twitterColor);
+  width: 40px;
+  height:40px;
+  border-radius: 40px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.check{
+  height: 18px;
+  width: 18px;
+}
+
+.borderBottom{
+  border-bottom:1px solid var(--borderColor) ;
+}
